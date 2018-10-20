@@ -27,8 +27,8 @@ public class UsersController {
         return response;
     }
 
-    @RequestMapping(value = "/{username}",  method = RequestMethod.GET)
-    public User getUser(HttpServletRequest request, @PathVariable("username") String username) {
+    @RequestMapping(value = "/{userid}",  method = RequestMethod.GET)
+    public User getUser(HttpServletRequest request, @PathVariable("userid") String username) {
 
         Object requestAttribute = request.getAttribute("claims");
         if((requestAttribute == null) || !(requestAttribute instanceof Claims)){
