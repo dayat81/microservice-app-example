@@ -12,7 +12,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 @RestController()
-@RequestMapping("/users")
+@RequestMapping("/user")
 public class UsersController {
 
     @Autowired
@@ -27,8 +27,8 @@ public class UsersController {
         return response;
     }
 
-    @RequestMapping(value = "/{userid}",  method = RequestMethod.GET)
-    public User getUser(HttpServletRequest request, @PathVariable("userid") String username) {
+    @RequestMapping(value = "/{username}",  method = RequestMethod.GET)
+    public User getUser(HttpServletRequest request, @PathVariable("username") String username) {
 
         Object requestAttribute = request.getAttribute("claims");
         if((requestAttribute == null) || !(requestAttribute instanceof Claims)){
