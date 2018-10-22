@@ -1,3 +1,6 @@
+# Developer Workspace
+[![Contribute](https://che.openshift.io/factory/resources/factory-contribute.svg)](http://che-eclipse-che.172.17.0.1.nip.io/f?name=che&user=che)
+
 # Example Microservice Application!
 
 This is an example of web application comprising of several components communicating to each other. In other words, this is an example of microservice app. Why is it better than many other examples? Well, because these microservices are written in different languages. This approach gives you flexibility for running experiments in polyglot environment.
