@@ -12,13 +12,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 @RestController()
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UsersController {
 
     @Autowired
     private UserRepository userRepository;
-
-
+    
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<User> getUsers() {
         List<User> response = new LinkedList<>();
